@@ -167,8 +167,7 @@ public class TareaController {
 				Optional<TareaDTO> salida = tareaService.actualizarTarea(tareaDTO, estadoTarea);
 
 				if (salida.isPresent()) {
- 
-					
+ 					
 					TareaDTO tareaActualizado = salida.get();
 
 					return new ResponseEntity<>(tareaActualizado, HttpStatus.OK);
